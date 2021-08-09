@@ -25,8 +25,8 @@ jobs:
             -e BOARD \
             -e UPDATE_FORCE=true \
             -e USE_TAG=2.0.8.1 \
-            -v $(pwd)/Firmware/Builds:/home/platformio/build \
-            -v $(pwd)/Firmware/Configuration:/home/platformio/CustomConfiguration \
+            -v $(pwd)/Builds:/home/platformio/build \
+            -v $(pwd)/Marlin:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
 
       - name: Push firmware

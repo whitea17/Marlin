@@ -3,7 +3,6 @@ name: Build Marlin Firmware
 on:
   push:
     branches:
-      - master
       - 2.0.x
     paths:
       - 'Firmware/Configuration/**.h'

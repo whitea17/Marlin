@@ -13,7 +13,7 @@ jobs:
     name: Compile and Push Firmware
     runs-on: ubuntu-latest
     env:
-      BOARD: LPC1769 
+      BOARD: LPC1769
 
     steps:
       - name: Check out repo
